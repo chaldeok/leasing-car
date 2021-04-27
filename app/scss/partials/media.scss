@@ -1,0 +1,43 @@
+// ---------- media ------------------------------------
+
+$media-mobile-320: 320px;
+$media-mobile-480: 480px;
+$media-tablet-768: 768px;
+$media-tablet-horizontal-1024: 1024px;
+$media-laptop-1440: 1440px;
+
+@mixin media-mobile-320 {
+  @media (max-width: $media-mobile-320) {
+    @content;
+  }
+}
+
+@mixin media-mobile-480 {
+  @media (max-width: $media-mobile-480) {
+    @content;
+  }
+}
+
+@mixin media-tablet-768 {
+  @media (max-width: $media-tablet-768) {
+    @content;
+  }
+}
+
+@mixin media-tablet-horizontal-1024 {
+  @media (max-width: $media-tablet-horizontal-1024) {
+    @content;
+  }
+}
+
+@mixin media-laptop-1440 {
+  @media (max-width: $media-laptop-1440) {
+    @content;
+  }
+}
+
+@mixin media-custom($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
