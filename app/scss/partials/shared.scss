@@ -1,0 +1,38 @@
+.main-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: $spacing;
+  padding-right: $spacing;
+
+  @media (max-width: 480px) {
+    padding: 0 15px 0 15px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111;
+  opacity: 0.3;
+  z-index: 8;
+  display: none;
+}
+
+.overlay--active {
+  display: block;
+}
+
+.button-order {
+  font-family: $font-link-btn;
+  @include adaptive-font(16, 11);
+  line-height: 24px;
+  padding: 12px 24px 12px 24px;
+  border: 1px solid $color-accent;
+  border-radius: $border-radius-btn-order;
+  letter-spacing: 0.5px;
+
+  transition: all .2s ease-out;
+}

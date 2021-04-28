@@ -1,0 +1,30 @@
+//@import "../../../node_modules/swiper/swiper-bundle.css";
+
+@import "../../../node_modules/swiper/components/navigation/navigation.scss";
+@import "../../../node_modules/swiper/components/pagination/pagination.scss";
+@import "../../../node_modules/swiper/components/effect-fade/effect-fade.scss";
+
+.main-slider {
+  font-family: $font-title;
+  color: white;
+}
+
+.slider-container {
+  border: 1px solid green;
+  border-radius: $border-radius-slider;
+}
+
+.slider-slide {
+  display: flex;
+}
+
+.slider-slide__left,
+.slider-slide__right {
+  width: 50%;
+}
+
+.slider-slide__left {
+  background-color: black;
+}
+
+
