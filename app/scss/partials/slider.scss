@@ -1,30 +1,76 @@
 //@import "../../../node_modules/swiper/swiper-bundle.css";
-
 @import "../../../node_modules/swiper/components/navigation/navigation.scss";
 @import "../../../node_modules/swiper/components/pagination/pagination.scss";
 @import "../../../node_modules/swiper/components/effect-fade/effect-fade.scss";
 
+
 .main-slider {
   font-family: $font-title;
+  letter-spacing: 0.5px;
   color: white;
 }
 
+.main-slider__content {
+  position: relative;
+}
+
 .slider-container {
-  border: 1px solid green;
-  border-radius: $border-radius-slider;
+/*  border: 1px solid green;
+  border-radius: $border-radius-slider;*/
 }
 
 .slider-slide {
   display: flex;
+  background-color: black;
+  border-radius: $border-radius-slider ;
+  border: 1px solid black;
 }
 
 .slider-slide__left,
 .slider-slide__right {
   width: 50%;
+  background-color: inherit;
 }
 
 .slider-slide__left {
-  background-color: black;
+  padding: 70px 0 155px 70px;
+  border-radius: $border-radius-slider 0 0 $border-radius-slider;
+}
+.slider-slide__left-content {
+  //border: 1px solid red;
+  h1 {
+    margin: 0 0 32px 0;
+    @include adaptive-font(54, 32);
+  }
+  p {
+    margin: 0 0 24px 0;
+  }
+}
+
+.button-order--slider {
+  color: white;
+  background-color: $color-accent;
+
+  &:hover {
+    color: $color-accent;
+    background-color: white;
+    border-color: white;
+  }
+
+  &:active {
+    background-color: darken(white, 20%);
+    border-color: darken(white, 20%);
+  }
+}
+
+.slider-slide__right {
+  width: 70%;
+  //border: 1px solid red;
+  background-image: url('../img/slider-car.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 0 $border-radius-slider $border-radius-slider 0;
 }
 
 

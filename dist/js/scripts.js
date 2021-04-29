@@ -22,37 +22,6 @@ function burgerMenu() {
 }
 
 burgerMenu();
-/*function burgerMenu() {
-  const menu = document.querySelector('.burger-menu'),
-    button = document.querySelector('.burger-menu__button'),
-    links = document.querySelector('.burger-menu__link'),
-    overlay = document.querySelector('.burger-menu__overlay');
-
-  button.addEventListener('click', (e) => {
-    e.preventDefault();
-    toggleMenu();
-  });
-
-  /!*links.addEventListener('click', (e) => {
-    toggleMenu();
-  });*!/
-
-  overlay.addEventListener('click', (e) => {
-    e.preventDefault();
-    toggleMenu();
-  });
-
-  function toggleMenu() {
-    menu.classList.toggle('burger-menu_active');
-    /!*if (menu.classList.contains('burger-menu_active')) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'visible';
-    }*!/
-  }
-}
-
-burgerMenu();*/
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
