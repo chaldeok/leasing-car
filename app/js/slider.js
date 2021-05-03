@@ -1,8 +1,26 @@
-// core version + navigation, pagination modules:
-import SwiperCore, {Autoplay, Navigation, Pagination} from "../../node_modules/swiper/core";
-
-// configure Swiper to use modules
-SwiperCore.use([Navigation, Pagination, Autoplay]);
-
 // init Swiper:
-//const mySlider = new Swiper(...);
+const mySlider = new Swiper('.swiper-container', {
+  loop: true,
+  direction: "horizontal",
+  effect: "fade",
+  speed: 800,
+  observer: true,
+  observeParents: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+    bulletActiveClass: "swiper-pagination-bullet-active",
+  },
+
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  }
+});
