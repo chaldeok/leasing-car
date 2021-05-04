@@ -36,3 +36,9 @@
 
   transition: all .2s ease-out;
 }
+
+@media (max-width: 620px) {
+  .main-container__slider {
+    padding: 0;
+  }
+}
