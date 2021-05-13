@@ -1,0 +1,82 @@
+<div class="main-calculator">
+  <div class="main-container">
+    <div class="main-calculator__content">
+      <form action="" class="main-calculator__form form">
+        <h3 class="section-title">Рассчитайте стоимость<br>автомобиля в лизинг</h3>
+
+        <div class="form-body">
+          <div class="form-body__row">
+            <div class="input-group">
+              <label for="price" class="input-group__label">Стоимость автомобиля</label>
+
+              <div class="input-wrapper">
+                <input type="number" id="price" class="input-group__input">
+
+                <span class="input-group__sign"> &#8381;</span>
+
+                <div class="range-slider__wrapper">
+                  <label for="range-price" class="input-group__label--range"></label>
+                  <input type="range" id="range-price" class="input-group__input--range" min="1000000" max="6000000" />
+                </div>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="initial-fee" class="input-group__label">Первоначальный взнос</label>
+
+              <div class="input-wrapper">
+                <input type="number" id="initial-fee" class="input-group__input">
+
+                <span class="input-group__sign"> 10%</span>
+
+                <div class="range-slider__wrapper">
+                  <label for="range-fee" class="input-group__label--range"></label>
+                  <input type="range" id="range-fee" class="input-group__input--range" min="1000000" max="6000000" />
+                </div>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="lease-term" class="input-group__label">Срок лизинга</label>
+
+              <div class="input-wrapper">
+                <input type="number" id="lease-term" class="input-group__input">
+
+                <span class="input-group__sign"> мес.</span>
+
+                <div class="range-slider__wrapper">
+                  <label for="rang-term" class="input-group__label--range"></label>
+                  <input type="range" id="rang-term" class="input-group__input--range" min="1000000" max="6000000" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-body__row">
+            <div class="input-group">
+              <label for="leasing-sum" class="input-group__label">Сумма договора лизинга</label>
+
+              <div class="input-wrapper">
+                <input type="number" id="leasing-sum" class="input-group__input">
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="monthly-payment" class="input-group__label">Ежемесячный платёж</label>
+
+              <div class="input-wrapper">
+                <input type="number" id="monthly-payment" class="input-group__input">
+              </div>
+            </div>
+
+            <div class="input-group input-group--btn">
+              <button class="button-order button-order--calculator" type="button" title="Оставить заявку">
+                Оставить заявку
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

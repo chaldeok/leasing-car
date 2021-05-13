@@ -1,0 +1,134 @@
+.main-calculator__content {
+  padding-bottom: 70px;
+}
+
+.section-title {
+  font-family: $font-title;
+  @include adaptive-font(48, 6);
+
+  @media (max-width: 868px) {
+    @include adaptive-font(54, 38);
+  }
+
+  @media (max-width: 530px) {
+    font-size: 1.612rem;
+  }
+}
+
+.form-body__row {
+  display: flex;
+  justify-content: space-between;
+
+  &:first-child {
+    margin-bottom: 50px;
+  }
+}
+
+.input-group {
+  flex: 0 1 31%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group__label {
+  font-family: $font-text;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color-secondary;
+  line-height: 24px;
+  margin: 0 0 24px 0;
+}
+
+.input-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 70px;
+}
+
+.input-group__input {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: $color-hover-menu-links;
+  border: none;
+  border-radius: 16px;
+  padding: 16px 24px 16px 24px;
+}
+
+.input-group__input,
+.input-group__sign {
+  color: $color-secondary;
+  font-family: $font-title;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.input-group__sign {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+}
+
+.range-slider__wrapper {
+  position: absolute;
+  width: 92%;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+}
+
+.input-group__input--range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background-color: $color-accent;
+}
+
+.input-group__input--range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: $color-accent;
+  cursor: pointer;
+  //margin-top: -1px;
+}
+.input-group__input--range::-moz-range-thumb {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: $color-accent;
+  cursor: pointer;
+}
+.input-group__input--range::-ms-thumb {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: $color-accent;
+  cursor: pointer;
+}
+
+.input-group--btn {
+  justify-content: flex-end;
+}
+
+.button-order--calculator {
+  color: white;
+  background-color: $color-accent;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 7px 0;
+
+  &:hover {
+    background-color: lighten($color-accent, 10%);
+    border-color: lighten($color-accent, 10%);
+  }
+
+  &:active {
+    background-color: darken($color-accent, 10%);
+    border-color: darken($color-accent, 10%);
+  }
+}

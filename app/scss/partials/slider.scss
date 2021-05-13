@@ -9,6 +9,7 @@
   font-family: $font-title;
   letter-spacing: 0.5px;
   color: white;
+  //margin-bottom: 100px;
 }
 
 .main-slider__content {
@@ -69,7 +70,7 @@
   h3 {
     margin: 0 0 32px 0;
     line-height: 90%;
-    @include adaptive-font(54, 6);
+    @include adaptive-font(48, 6);
 
     @media (max-width: 868px) {
       @include adaptive-font(54, 38);
