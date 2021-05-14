@@ -7,16 +7,16 @@
         <div class="form-body">
           <div class="form-body__row">
             <div class="input-group">
-              <label for="price" class="input-group__label">Стоимость автомобиля</label>
+              <label for="car-price" class="input-group__label">Стоимость автомобиля</label>
 
               <div class="input-wrapper">
-                <input type="number" id="price" class="input-group__input">
+                <input type="number" id="car-price" class="input-group__input">
 
-                <span class="input-group__sign"> &#8381;</span>
+                <span class="input-group__sign">₽</span>
 
                 <div class="range-slider__wrapper">
-                  <label for="range-price" class="input-group__label--range"></label>
-                  <input type="range" id="range-price" class="input-group__input--range" min="1000000" max="6000000" />
+                  <label for="range-car-price" class="input-group__label--range"></label>
+                  <input type="range" id="range-car-price" class="input-group__input--range" min="1000000" max="6000000" />
                 </div>
               </div>
             </div>
@@ -27,11 +27,11 @@
               <div class="input-wrapper">
                 <input type="number" id="initial-fee" class="input-group__input">
 
-                <span class="input-group__sign"> 10%</span>
+                <span class="input-group__sign fee-percent"> 10%</span>
 
                 <div class="range-slider__wrapper">
                   <label for="range-fee" class="input-group__label--range"></label>
-                  <input type="range" id="range-fee" class="input-group__input--range" min="1000000" max="6000000" />
+                  <input type="range" id="range-fee" class="input-group__input--range" min="10" max="60" />
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@
 
                 <div class="range-slider__wrapper">
                   <label for="rang-term" class="input-group__label--range"></label>
-                  <input type="range" id="rang-term" class="input-group__input--range" min="1000000" max="6000000" />
+                  <input type="range" id="rang-term" class="input-group__input--range" min="1" max="60" />
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
 
             <div class="input-group input-group--btn">
               <button class="button-order button-order--calculator" type="button" title="Оставить заявку">
-                Оставить заявку
+                Оформить заявку
               </button>
             </div>
           </div>

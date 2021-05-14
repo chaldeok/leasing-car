@@ -4935,3 +4935,23 @@ var mySlider = new Swiper('.swiper-container', {
     disableOnInteraction: false
   }
 });
+"use strict";
+
+var carPriceInput = document.getElementById("car-price");
+var carPriceRange = document.getElementById("range-car-price");
+var initialFeeInput = document.getElementById("initial-fee");
+var initialFeeRange = document.getElementById("range-fee");
+var initialFeePercent = document.querySelector(".fee-percent");
+var leaseTermInput = document.getElementById("lease-term");
+var leaseTermRange = document.getElementById("rang-term");
+var leasingSumInput = document.getElementById("leasing-sum");
+var monthlyPaymentInput = document.getElementById("monthly-payment");
+var inputs = document.querySelectorAll(".input-group__input");
+inputs.forEach(function (input) {
+  input.addEventListener("focus", function () {
+    input.classList.add("active");
+  });
+  input.addEventListener("blur", function () {
+    input.classList.remove("active");
+  });
+});
