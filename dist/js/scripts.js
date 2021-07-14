@@ -4947,6 +4947,30 @@ var leaseTermRange = document.getElementById("rang-term");
 var leasingSumInput = document.getElementById("leasing-sum");
 var monthlyPaymentInput = document.getElementById("monthly-payment");
 var inputs = document.querySelectorAll(".input-group__input");
+var minCarPrice = 1000000;
+var maxCarPrice = 6000000;
+var minInitFeePercent = 10;
+var maxInitFeePercent = 60;
+var minTerm = 1;
+var maxTerm = 60;
+var startCarPrice = 3200000;
+var initialFee = "330 000";
+carPriceInput.value = 3300000;
+reset();
+
+function reset() {
+  carPriceInput.value = minCarPrice;
+  initialFeePercent.textContent = "".concat(minInitFeePercent, "%");
+  leaseTermInput.value = minTerm;
+  initialFeeInput.value = Math.floor(carPriceInput.value * parseInt(initialFeePercent.textContent) / 100);
+}
+
+function calcMonthlyFee(price, initFee) {}
+
+function calcTotalSum() {}
+
+function showLeasingConditions() {}
+
 inputs.forEach(function (input) {
   input.addEventListener("focus", function () {
     input.classList.add("active");

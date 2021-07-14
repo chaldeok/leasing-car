@@ -16,7 +16,7 @@
 
                 <div class="range-slider__wrapper">
                   <label for="range-car-price" class="input-group__label--range"></label>
-                  <input type="range" id="range-car-price" class="input-group__input--range" min="1000000" max="6000000" />
+                  <input type="range" id="range-car-price" name="car-price" class="input-group__input--range" min="1000000" max="6000000" />
                 </div>
               </div>
             </div>
@@ -25,13 +25,13 @@
               <label for="initial-fee" class="input-group__label">Первоначальный взнос</label>
 
               <div class="input-wrapper">
-                <input type="number" id="initial-fee" class="input-group__input">
+                <input type="text" id="initial-fee" class="input-group__input">
 
                 <span class="input-group__sign fee-percent"> 10%</span>
 
                 <div class="range-slider__wrapper">
                   <label for="range-fee" class="input-group__label--range"></label>
-                  <input type="range" id="range-fee" class="input-group__input--range" min="10" max="60" />
+                  <input type="range" id="range-fee" name="initial-fee" class="input-group__input--range" min="10" max="60" />
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@
 
                 <div class="range-slider__wrapper">
                   <label for="rang-term" class="input-group__label--range"></label>
-                  <input type="range" id="rang-term" class="input-group__input--range" min="1" max="60" />
+                  <input type="range" id="rang-term" name="months" class="input-group__input--range" min="1" max="60" value="60"/>
                 </div>
               </div>
             </div>
